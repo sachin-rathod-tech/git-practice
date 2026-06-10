@@ -1,0 +1,81 @@
+======================================================================
+                  🚀 GIT PRACTICAL CHEAT-SHEET: DAY 2 🚀
+======================================================================
+
+----------------------------------------------------------------------
+1. USER CONFIGURATION (Identity Setup) 🆔
+----------------------------------------------------------------------
+# Set the username globally for all repositories
+git config --global user.name "your-username"
+
+# Set the email address globally for all repositories
+git config --global user.email "your-email@example.com"
+
+# List all current configuration settings to verify
+git config --list
+
+----------------------------------------------------------------------
+2. ADVANCED STAGING AREA WORKFLOW (Undo & Reset) 🔄
+----------------------------------------------------------------------
+# System command to create a new user profile in Linux
+sudo useradd -m sachin
+
+# Check the current status of files in the working directory
+git status
+
+# Stage a single specific file
+git add filename
+
+# Stage all files and modifications at once
+git add .
+
+# Move a file back from Staging Area to Working Directory (Modern Git)
+git restore --staged filename
+
+# Alternative method to remove a file from the staging index
+git rm --cached filename
+
+----------------------------------------------------------------------
+3. COMMIT HISTORY LOGS 📸
+----------------------------------------------------------------------
+# View detailed commit history with author metadata and dates
+git log
+
+# View a clean, compressed, single-line format of the commit history
+git log --oneline
+
+----------------------------------------------------------------------
+4. REMOTE GITHUB REPOSITORY CONFIGURATION 🌐
+----------------------------------------------------------------------
+# Copy a remote repository from GitHub to the local storage system
+git clone <remote_repository_HTTP_link>
+
+# Rename the current active default branch to main
+git branch -M main
+
+# Commit local changes with a descriptive message
+git commit -m "this is last modify"
+
+# Push local commits to the remote repository on GitHub
+git push origin main
+
+----------------------------------------------------------------------
+5. AUTHENTICATION PROTECTION: GITHUB TOKEN PATH 🔑
+----------------------------------------------------------------------
+# Note: GitHub does not accept account passwords for terminal authentication.
+# You must use a Personal Access Token (PAT) as the authentication password.
+
+📌 STEP-BY-STEP TOKEN GENERATION DIRECTION:
+👉 GitHub Dashboard -> Click Profile Icon (Top Right Corner)
+  👉 Settings
+    👉 Developer settings (Bottom Left Sidebar)
+      👉 Personal access tokens
+        👉 Tokens (classic)
+          👉 Generate new token
+            👉 Generate new token (classic)
+              👉 Add a description note & select 'repo' checkbox
+                👉 Click "Create token"
+
+⚠️ CRITICAL: Copy the generated token immediately and store it securely.
+Paste this token string into the terminal whenever 'git push' requests a password.
+======================================================================
