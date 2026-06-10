@@ -1,21 +1,27 @@
-# git-practice
-my first practice in git
+--------------------------------------------------
+## GitHub Storage & Remote Configuration
+--------------------------------------------------
 
+# * GitHub Storage Limits *
 
-🧠 Git Theory (Concepts)
+## Individual File Limits
+* **50 MB:** Git will start giving a warning message in the terminal.
+* **100 MB Hard Limit:** GitHub completely blocks files larger than 100 MB via normal push.
+* **Solution for large files:** Use `.gitignore` to skip them or setup `Git LFS` (Large File Storage).
 
-Version Control System (VCS): Git tracks changes in files over time, letting you revert, compare, and collaborate.
+## Repository & Push Limits
+* **Per Repository Max:** Recommended size is under 1 GB (Hard warning at 5 GB).
+* **Per Push Limit:** Maximum data size for a single `git push` batch is 2 GB.
+* **Account Limit:** Unlimited public and private repositories can be created on a single account.
 
-Repository (Repo): A project folder managed by Git. Can be local (on your machine) or remote (on GitHub, GitLab, etc.).
+--------------------------------------------------
+# * Git Remote Commands *
 
-Commit: A snapshot of your project at a point in time. Each commit has a unique ID (hash).
+## Link Local Repository to GitHub Cloud
+git remote add origin repository-link 
 
-Branch: A parallel line of development. main (or master) is the default branch.
+## Push Code to GitHub for the First Time
+git push  origin main
 
-Merge: Combining changes from one branch into another.
-
-Clone: Copying a remote repository to your local machine.
-
-Push/Pull: Push = send local commits to remote. Pull = fetch and merge remote commits into local.
-
-Staging Area: Where changes are prepared before committing.
+git push
+--------------------------------------------------
