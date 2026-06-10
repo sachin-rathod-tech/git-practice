@@ -76,6 +76,5 @@ git push origin main
               👉 Add a description note & select 'repo' checkbox
                 👉 Click "Create token"
 
-⚠️ CRITICAL: Copy the generated token immediately and store it securely.
-Paste this token string into the terminal whenever 'git push' requests a password.
+
 ======================================================================
