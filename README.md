@@ -15,13 +15,5 @@
 * **Account Limit:** Unlimited public and private repositories can be created on a single account.
 
 --------------------------------------------------
-# * Git Remote Commands *
 
-## Link Local Repository to GitHub Cloud
-git remote add origin repository-link 
-
-## Push Code to GitHub for the First Time
-git push  origin main
-
-git push
 --------------------------------------------------
