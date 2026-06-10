@@ -30,8 +30,14 @@ git rm --cached filename
 git commit -m "Your commit message"
 
 ---------------------------------
+# Push code Remote Repo
+git push origin main
+
+------------------------------
 # View commit history
 git log
 git log --oneline
 
-------------------------------
+---------------------------------
+---------------------------------
+
