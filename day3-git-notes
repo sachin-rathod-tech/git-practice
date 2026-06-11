@@ -1,7 +1,17 @@
-------------------------------------
-------------------------------------
-         * Day-3 *
------------------------------------
------------------------------------
+
+======================================================================
+               🚀 GIT DAY 3: SSH CONNECTION ESTABLISHMENT 🚀
+======================================================================
+
+### ⚙️ SECTION 1: SSH KEY GENERATION (Laptop Local)
+---
+
+> [!NOTE]  
+> SSH connections eliminate the need to enter your GitHub username and Personal Access Token (PAT) during a push operation.
+
+```bash
+# Generate a secure 4096-bit RSA SSH key pair using your GitHub email
+ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
 
 # SSH Key provides secure, passwordless authentication between a client and a remote server.
+
