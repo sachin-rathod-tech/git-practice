@@ -2,16 +2,151 @@
 ======================================================================
                🚀 GIT DAY 3: SSH CONNECTION ESTABLISHMENT 🚀
 ======================================================================
+# 🔐 SSH Key Connection with GitHub
 
-### ⚙️ SECTION 1: SSH KEY GENERATION (Laptop Local)
+## What is SSH Key?
+
+SSH Key is used for secure authentication between your computer and GitHub server.
+
+### Benefits
+- ✅ Secure Login
+- ✅ No Password Required
+- ✅ Easy Git Push & Pull
+- ✅ Faster Authentication
+
 ---
 
-> [!NOTE]  
-> SSH connections eliminate the need to enter your GitHub username and Personal Access Token (PAT) during a push operation.
+## Types of SSH Keys
+
+### 1. Private Key
+- Secret key
+- Never share with anyone
+- Example: `id_ed25519`
+
+### 2. Public Key
+- Can be shared
+- Added to GitHub Account
+- Example: `id_ed25519.pub`
+
+---
+
+## Step 1: Generate SSH Key
 
 ```bash
-# Generate a secure 4096-bit RSA SSH key pair using your GitHub email
-ssh-keygen -t rsa -b 4096 -C "your-email@example.com"
+ssh-keygen -t ed25519 -C "your-email@example.com"
+```
 
-# SSH Key provides secure, passwordless authentication between a client and a remote server.
+Press Enter 3 times.
 
+---
+
+## Step 2: Verify SSH Key
+
+```bash
+ls -la ~/.ssh
+```
+
+Output:
+
+```text
+id_ed25519
+id_ed25519.pub
+```
+
+---
+
+## Step 3: Copy Public Key
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Copy the complete output.
+
+---
+
+## Step 4: Add SSH Key to GitHub
+
+1. GitHub Login
+2. Settings
+3. SSH and GPG Keys
+4. New SSH Key
+5. Enter Title
+6. Paste Public Key
+7. Click Add SSH Key
+
+---
+
+## Step 5: Test SSH Connection
+
+```bash
+ssh -T git@github.com
+```
+
+Expected Output:
+
+```text
+Hi username! You've successfully authenticated.
+```
+
+---
+
+## Clone Repository Using SSH
+
+```bash
+git clone git@github.com:username/repository.git
+```
+
+---
+
+## Basic Git Commands
+
+### Check Status
+
+```bash
+git status
+```
+
+### Add Files
+
+```bash
+git add .
+```
+
+### Commit Changes
+
+```bash
+git commit -m "Added SSH notes"
+```
+
+### Push Changes
+
+```bash
+git push origin main
+```
+
+---
+
+## Important Note
+
+> One SSH Key belongs to one user account.
+>
+> Another user must create and use their own SSH Key for secure access.
+
+---
+
+## SSH Workflow
+
+```text
+Generate SSH Key
+        ↓
+Copy Public Key
+        ↓
+Add Key to GitHub
+        ↓
+Test Connection
+        ↓
+Clone Repository
+        ↓
+Add → Commit → Push
+```
