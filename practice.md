@@ -5,11 +5,11 @@
 ---
 
 ---bash
-## sachin rathod
+ sachin-rathod
 ---
 
 # * asdfghjkl
-# * asdfghjkl
+ * asdfghjkl
 # * asdfghjkl
 
 * qwlkjhgfdsazxcvbnm
