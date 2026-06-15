@@ -1,0 +1,2530 @@
+sachin@ip-172-31-33-69:~$ ls
+sachin@ip-172-31-33-69:~$ ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/sachin/.ssh/id_ed25519):
+Created directory '/home/sachin/.ssh'.
+Enter passphrase for "/home/sachin/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/sachin/.ssh/id_ed25519
+Your public key has been saved in /home/sachin/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:/vBkX9340vcpyIhUx5pCnjuEkXXMs3Z3a3kBg2MU9E4 sachin@ip-172-31-33-69
+The key's randomart image is:
++--[ED25519 256]--+
+|        o o+o    |
+|       . = +.o   |
+|      o . = .Eo  |
+|     o . + +o. o |
+|      = S = ... +|
+|     . B o     *o|
+|      o * = . +.+|
+|       + B + o..+|
+|        . o . .o=|
++----[SHA256]-----+
+sachin@ip-172-31-33-69:~$ cat .ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG3ZvfClJGxn0Sti9gwVoJKdF8X0a8onTXY8v3laN0GW sachin@ip-172-31-33-69
+sachin@ip-172-31-33-69:~$ ls
+sachin@ip-172-31-33-69:~$ mkdir alia
+sachin@ip-172-31-33-69:~$ ls
+alia
+sachin@ip-172-31-33-69:~$ cd alia/
+sachin@ip-172-31-33-69:~/alia$ ls
+sachin@ip-172-31-33-69:~/alia$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/sachin/alia/.git/
+sachin@ip-172-31-33-69:~/alia$ ls -a
+.  ..  .git
+sachin@ip-172-31-33-69:~/alia$ ls
+sachin@ip-172-31-33-69:~/alia$ git config --global user.name "joker"
+sachin@ip-172-31-33-69:~/alia$ git config --global user.email "sachin-rathod@outlook.com"
+sachin@ip-172-31-33-69:~/alia$ git config --list
+user.name=joker
+user.email=sachin-rathod@outlook.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+sachin@ip-172-31-33-69:~/alia$ ls
+sachin@ip-172-31-33-69:~/alia$ git clone git@github.com:sachin-rathod-tech/git-practice.git
+Cloning into 'git-practice'...
+The authenticity of host 'github.com (20.200.245.247)' can't be established.
+ED25519 key fingerprint is: SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+remote: Enumerating objects: 116, done.
+remote: Counting objects: 100% (116/116), done.
+remote: Compressing objects: 100% (97/97), done.
+remote: Total 116 (delta 44), reused 51 (delta 11), pack-reused 0 (from 0)
+Receiving objects: 100% (116/116), 975.00 KiB | 1.03 MiB/s, done.
+Resolving deltas: 100% (44/44), done.
+sachin@ip-172-31-33-69:~/alia$ ls
+git-practice
+sachin@ip-172-31-33-69:~/alia$ cd git-practice/
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+* main
+sachin@ip-172-31-33-69:~/alia/git-practice$ git checkout -b prod
+Switched to a new branch 'prod'
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+  main
+* prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+  main
+* prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch prod
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cd practice/
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ ls
+branch-file.md  practice.md  yash
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ cat practice.md
+---
+## ........................
+# ....................
+### ..................
+---
+
+```bash
+ ## sachin-rathod
+```
+
+# * asdfghjkl
+ * asdfghjkl
+# * asdfghjkl
+
+* qwlkjhgfdsazxcvbnm
+---
+
+|  no  |  name  |
+| --------------
+|      |        |
+|      |        |
+|      |
+|---------------|
+---
+
+
+---
+---
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ s
+s: command not found
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ ls
+branch-file.md  practice.md  yash
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ cd ..
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ touch index.html
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ nano index.html
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat index.html
+
+hello everyone my name is Sachin
+i am from Beed, Maharastra !
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat >> index.html
+
+^C
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat index.html
+
+hello everyone my name is Sachin
+i am from Beed, Maharastra !
+
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch prod
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+sachin@ip-172-31-33-69:~/alia/git-practice$ git add index.html
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch prod
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+sachin@ip-172-31-33-69:~/alia/git-practice$ git commit -m "added new file"
+[prod c0735db] added new file
+ 1 file changed, 4 insertions(+)
+ create mode 100644 index.html
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch prod
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+* main
+  prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git merge prod
+Updating 2326169..c0735db
+Fast-forward
+ index.html | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 index.html
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat index.html
+
+hello everyone my name is Sachin
+i am from Beed, Maharastra !
+
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat practice/
+branch-file.md  practice.md     yash
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat practice/practice.md
+---
+## ........................
+# ....................
+### ..................
+---
+
+```bash
+ ## sachin-rathod
+```
+
+# * asdfghjkl
+ * asdfghjkl
+# * asdfghjkl
+
+* qwlkjhgfdsazxcvbnm
+---
+
+|  no  |  name  |
+| --------------
+|      |        |
+|      |        |
+|      |
+|---------------|
+---
+
+
+---
+---
+sachin@ip-172-31-33-69:~/alia/git-practice$ s
+s: command not found
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git push
+To github.com:sachin-rathod-tech/git-practice.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:sachin-rathod-tech/git-practice.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+sachin@ip-172-31-33-69:~/alia/git-practice$ git fetch origin main
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.04 KiB | 1.04 MiB/s, done.
+From github.com:sachin-rathod-tech/git-practice
+ * branch            main       -> FETCH_HEAD
+   2326169..3b38b4c  main       -> origin/main
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cd practice/
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ ls
+branch-file.md  practice.md  yash
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ cat practice.md
+---
+## ........................
+# ....................
+### ..................
+---
+
+```bash
+ ## sachin-rathod
+```
+
+# * asdfghjkl
+ * asdfghjkl
+# * asdfghjkl
+
+* qwlkjhgfdsazxcvbnm
+---
+
+|  no  |  name  |
+| --------------
+|      |        |
+|      |        |
+|      |
+|---------------|
+---
+
+
+---
+---
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ ls
+branch-file.md  practice.md  yash
+sachin@ip-172-31-33-69:~/alia/git-practice/practice$ cd ..
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git pull
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+sachin@ip-172-31-33-69:~/alia/git-practice$ git rebase
+Successfully rebased and updated refs/heads/main.
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat practice/practice.md
+
+## * Hello Sachin *
+
+# ....................
+### ..................
+---
+
+```bash
+  sachin-rathod
+```
+
+# * asdfghjkl
+ * asdfghjkl
+# * asdfghjkl
+
+* qwlkjhgfdsazxcvbnm
+---
+
+|  no  |  name  |
+| --------------
+|      |        |
+|      |        |
+|      |
+|---------------|
+---
+
+
+---
+---
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/alia/git-practice$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 342.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:sachin-rathod-tech/git-practice.git
+   3b38b4c..39d2973  main -> main
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+* main
+  prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ git ckeckout practice/
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+sachin@ip-172-31-33-69:~/alia/git-practice$ git ckeckout prod
+git: 'ckeckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+* main
+  prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ git checkout prod
+Switched to branch 'prod'
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+  main
+* prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat practice/practice.md
+---
+## ........................
+# ....................
+### ..................
+---
+
+```bash
+ ## sachin-rathod
+```
+
+# * asdfghjkl
+ * asdfghjkl
+# * asdfghjkl
+
+* qwlkjhgfdsazxcvbnm
+---
+
+|  no  |  name  |
+| --------------
+|      |        |
+|      |        |
+|      |
+|---------------|
+---
+
+
+---
+---
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> prod
+
+sachin@ip-172-31-33-69:~/alia/git-practice$ git remote -v
+origin  git@github.com:sachin-rathod-tech/git-practice.git (fetch)
+origin  git@github.com:sachin-rathod-tech/git-practice.git (push)
+sachin@ip-172-31-33-69:~/alia/git-practice$ git remote
+origin
+sachin@ip-172-31-33-69:~/alia/git-practice$ l
+README.md  aws-notes/  git-notes/  index.html  notes/  practice/
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+  main
+* prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git branch
+* main
+  prod
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ vim index.html
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat index.html
+
+hello everyone my name is Sachin
+i am from Beed, Maharastra !
+
+---------------------------------
+---------------------------------
+
+i am learning devops tool
+like linux, aws, git, deocker
+
+sachin@ip-172-31-33-69:~/alia/git-practice$ vim index.html
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sachin@ip-172-31-33-69:~/alia/git-practice$ git add *
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+sachin@ip-172-31-33-69:~/alia/git-practice$ git commit -m "modified file"
+[main aa8af21] modified file
+ 1 file changed, 6 insertions(+)
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/alia/git-practice$ git push
+To github.com:sachin-rathod-tech/git-practice.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:sachin-rathod-tech/git-practice.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+sachin@ip-172-31-33-69:~/alia/git-practice$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 983 bytes | 983.00 KiB/s, done.
+From github.com:sachin-rathod-tech/git-practice
+   39d2973..a14f3c5  main       -> origin/main
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+sachin@ip-172-31-33-69:~/alia/git-practice$ git rebase
+Successfully rebased and updated refs/heads/main.
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ cat index.html
+# Ragnar Lothbrok
+hello everyone my name is Sachin
+i am from Beed, Maharastra !
+
+---------------------------------
+---------------------------------
+
+i am learning devops tool
+like : linux, aws, git, deocker
+            ----
+sachin@ip-172-31-33-69:~/alia/git-practice$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 393 bytes | 393.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:sachin-rathod-tech/git-practice.git
+   a14f3c5..bfe6699  main -> main
+sachin@ip-172-31-33-69:~/alia/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/alia/git-practice$ Connection reset by 3.37.87.155 port 22
+PS C:\Users\Admin\Documents\aws-key>
+PS C:\Users\Admin\Documents\aws-key> ls
+
+
+    Directory: C:\Users\Admin\Documents\aws-key
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        19-05-2026     22:39           1674 osaka.pem
+-a----        06-05-2026     14:02           1678 paris-key.pem
+-a----        09-04-2026     13:55           1674 sachin-key.pem
+-a----        13-04-2026     18:33            112 sachin_credentials.csv
+
+
+PS C:\Users\Admin\Documents\aws-key> ssh -i .\sachin-key.pem ubuntu@3.37.87.155
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-1006-aws x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Jun 15 08:10:17 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   34.7% of 6.61GB   Processes:             125
+  Memory usage: 30%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.33.69
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+12 updates can be applied immediately.
+12 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Jun 15 07:15:10 2026 from 106.78.36.1
+ubuntu@ip-172-31-33-69:~$ su - sachin
+Password:
+$ bash
+sachin@ip-172-31-33-69:~$ ls
+alia
+sachin@ip-172-31-33-69:~$ mkdir tara
+sachin@ip-172-31-33-69:~$ ls
+alia  tara
+sachin@ip-172-31-33-69:~$ cd tara/
+sachin@ip-172-31-33-69:~/tara$ ls
+sachin@ip-172-31-33-69:~/tara$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/sachin/tara/.git/
+sachin@ip-172-31-33-69:~/tara$ ls -a
+.  ..  .git
+sachin@ip-172-31-33-69:~/tara$ ls
+sachin@ip-172-31-33-69:~/tara$ git clone git@github.com:sachin-rathod-tech/git-practice.git
+Cloning into 'git-practice'...
+remote: Enumerating objects: 129, done.
+remote: Counting objects: 100% (129/129), done.
+remote: Compressing objects: 100% (108/108), done.
+remote: Total 129 (delta 50), reused 57 (delta 13), pack-reused 0 (from 0)
+Receiving objects: 100% (129/129), 977.51 KiB | 1.05 MiB/s, done.
+Resolving deltas: 100% (50/50), done.
+sachin@ip-172-31-33-69:~/tara$ ls
+git-practice
+sachin@ip-172-31-33-69:~/tara$ cd git-practice/
+sachin@ip-172-31-33-69:~/tara/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/tara/git-practice$ git checkout -b test
+Switched to a new branch 'test'
+sachin@ip-172-31-33-69:~/tara/git-practice$ git branch
+  main
+* test
+sachin@ip-172-31-33-69:~/tara/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/tara/git-practice$ vim index.html
+sachin@ip-172-31-33-69:~/tara/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/tara/git-practice$ cta index.html
+Command 'cta' not found, did you mean:
+  command 'cba' from deb cba (0.3.6-6build4)
+  command 'eta' from deb eta (1.0.1-1)
+  command 'cat' from deb coreutils-from-gnu (0.0.0~ubuntu25)
+  command 'cat' from deb coreutils-from-uutils (0.0.0~ubuntu25)
+  command 'cat' from deb coreutils-from-busybox (0.0.0~ubuntu25)
+  command 'cat' from deb coreutils-from-toybox (0.0.0~ubuntu25)
+  command 'ctr' from deb containerd (2.2.2-0ubuntu1)
+  command 'ctr' from deb containerd-stable (2.2.2-0ubuntu1)
+  command 'sta' from deb opensta (0~20191111gitc018cb2+dfsg-1.1)
+Try: sudo apt install <deb name>
+sachin@ip-172-31-33-69:~/tara/git-practice$ cat index.html
+## Sachin Rayhod
+# Ragnar Lothbrok
+
+hello everyone my name is Sachin
+i am from Beed, Maharastra !
+
+---------------------------------
+---------------------------------
+
+i am learning devops tool
+like : linux, aws, git, deocker
+            ----
+sachin@ip-172-31-33-69:~/tara/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/tara/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/tara/git-practice$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sachin@ip-172-31-33-69:~/tara/git-practice$ git add index.html
+sachin@ip-172-31-33-69:~/tara/git-practice$ git commit -m "ragnar lothbrok"
+[test f0267a2] ragnar lothbrok
+ 1 file changed, 2 insertions(+)
+sachin@ip-172-31-33-69:~/tara/git-practice$ git status
+On branch test
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/tara/git-practice$ git push origin test
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'test' on GitHub by visiting:
+remote:      https://github.com/sachin-rathod-tech/git-practice/pull/new/test
+remote:
+To github.com:sachin-rathod-tech/git-practice.git
+ * [new branch]      test -> test
+sachin@ip-172-31-33-69:~/tara/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/tara/git-practice$ cd
+sachin@ip-172-31-33-69:~$ ls
+alia  tara
+sachin@ip-172-31-33-69:~$ mkdir test
+sachin@ip-172-31-33-69:~$ ls
+alia  tara  test
+sachin@ip-172-31-33-69:~$ cd test/
+sachin@ip-172-31-33-69:~/test$ ls
+sachin@ip-172-31-33-69:~/test$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/sachin/test/.git/
+sachin@ip-172-31-33-69:~/test$ git clone git@github.com:sachin-rathod-tech/git-practice.git
+Cloning into 'git-practice'...
+remote: Enumerating objects: 132, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 132 (delta 37), reused 22 (delta 22), pack-reused 93 (from 1)
+Receiving objects: 100% (132/132), 977.80 KiB | 1.06 MiB/s, done.
+Resolving deltas: 100% (51/51), done.
+sachin@ip-172-31-33-69:~/test$ ls
+git-practice
+sachin@ip-172-31-33-69:~/test$ cd git-practice/
+sachin@ip-172-31-33-69:~/test/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/test/git-practice$ git branch
+* main
+sachin@ip-172-31-33-69:~/test/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/test/git-practice$ cd ..
+sachin@ip-172-31-33-69:~/test$ ls
+git-practice
+sachin@ip-172-31-33-69:~/test$ rm -r git-practice/
+rm: remove write-protected regular file 'git-practice/.git/objects/pack/pack-99e7d31c18b353e727eb1b03c239d03b215eba16.rev'? ^C
+sachin@ip-172-31-33-69:~/test$ sudo rm -r git-practice/
+[sudo: authenticate] Password:
+sachin@ip-172-31-33-69:~/test$ ls
+sachin@ip-172-31-33-69:~/test$ git clone https://github.com/sachin-rathod-tech/git-practice.git
+Cloning into 'git-practice'...
+remote: Enumerating objects: 132, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 132 (delta 37), reused 22 (delta 22), pack-reused 93 (from 1)
+Receiving objects: 100% (132/132), 977.80 KiB | 46.56 MiB/s, done.
+Resolving deltas: 100% (51/51), done.
+sachin@ip-172-31-33-69:~/test$ ls
+git-practice
+sachin@ip-172-31-33-69:~/test$ cd git-practice/
+sachin@ip-172-31-33-69:~/test/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/test/git-practice$ git branch
+* main
+sachin@ip-172-31-33-69:~/test/git-practice$ cd ..
+sachin@ip-172-31-33-69:~/test$ ls
+git-practice
+sachin@ip-172-31-33-69:~/test$ sudo rm -r git-practice/
+sachin@ip-172-31-33-69:~/test$ ls
+sachin@ip-172-31-33-69:~/test$ ls
+sachin@ip-172-31-33-69:~/test$ git clone -b test git@github.com:sachin-rathod-tech/git-practice.git
+Cloning into 'git-practice'...
+remote: Enumerating objects: 132, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 132 (delta 37), reused 22 (delta 22), pack-reused 93 (from 1)
+Receiving objects: 100% (132/132), 977.80 KiB | 1.06 MiB/s, done.
+Resolving deltas: 100% (51/51), done.
+sachin@ip-172-31-33-69:~/test$ ls
+git-practice
+sachin@ip-172-31-33-69:~/test$ cd git-practice/
+sachin@ip-172-31-33-69:~/test/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/test/git-practice$ git branch
+* test
+sachin@ip-172-31-33-69:~/test/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/test/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/test/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/test/git-practice$
+sachin@ip-172-31-33-69:~/test/git-practice$ client_loop: send disconnect: Connection reset
+PS C:\Users\Admin\Documents\aws-key> ssh -i .\sachin-key.pem ubuntu@3.37.87.155
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-1006-aws x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Jun 15 08:43:46 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   34.9% of 6.61GB   Processes:             123
+  Memory usage: 30%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.33.69
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+12 updates can be applied immediately.
+12 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Jun 15 08:10:18 2026 from 106.78.36.1
+ubuntu@ip-172-31-33-69:~$ su - sachin
+Password:
+$ bash
+sachin@ip-172-31-33-69:~$ ls
+alia  tara  test
+sachin@ip-172-31-33-69:~$ cd alia/
+sachin@ip-172-31-33-69:~/alia$ ls
+git-practice
+sachin@ip-172-31-33-69:~/alia$ cd ..
+sachin@ip-172-31-33-69:~$ ls
+alia  tara  test
+sachin@ip-172-31-33-69:~$ mkdir nre\
+> ^C
+sachin@ip-172-31-33-69:~$ mkdir new
+sachin@ip-172-31-33-69:~$ ls
+alia  new  tara  test
+sachin@ip-172-31-33-69:~$ cd new/
+sachin@ip-172-31-33-69:~/new$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /home/sachin/new/.git/
+sachin@ip-172-31-33-69:~/new$ git clone git@github.com:sachin-rathod-tech/git-practice.git
+Cloning into 'git-practice'...
+remote: Enumerating objects: 135, done.
+remote: Counting objects: 100% (42/42), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 135 (delta 38), reused 22 (delta 22), pack-reused 93 (from 1)
+Receiving objects: 100% (135/135), 978.83 KiB | 1.03 MiB/s, done.
+Resolving deltas: 100% (52/52), done.
+sachin@ip-172-31-33-69:~/new$ ls
+git-practice
+sachin@ip-172-31-33-69:~/new$ cd git-practice/
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ cdv git-notes/
+Command 'cdv' not found, but can be installed with:
+sudo apt install erlang-observer
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ pwd
+/home/sachin/new/git-practice
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ cd git-notes/
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ ls
+day1-git-notes.md  day2-git-notes  day3-git-notes.md  day4-git-notes.md
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ cat day3-git-notes.md
+
+======================================================================
+#               🚀 GIT DAY 3: SSH CONNECTION ESTABLISHMENT 🚀
+======================================================================
+# 🔐 SSH Key Connection with GitHub
+
+## What is SSH Key?
+
+* SSH Key is used for secure authentication between your computer and GitHub server.
+
+### Benefits
+- ✅ Secure Login
+- ✅ No Password Required
+- ✅ Easy Git Push & Pull
+- ✅ Faster Authentication
+
+---
+
+## Types of SSH Keys
+
+### 1. Private Key
+- Secret key
+- Never share with anyone
+- Example: `id_ed25519`
+
+### 2. Public Key
+- Can be shared
+- Added to GitHub Account
+- Example: `id_ed25519.pub`
+
+---
+
+## Step 1: Generate SSH Key
+
+```bash
+ssh-keygen -t ed25519 -C "your-email@example.com"
+```
+
+Press Enter 3 times.
+
+---
+
+## Step 2: Verify SSH Key
+
+```bash
+ls -la ~/.ssh
+```
+
+Output:
+
+```text
+id_ed25519
+id_ed25519.pub
+```
+
+---
+
+## Step 3: Copy Public Key
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Copy the complete output.
+
+---
+
+## Step 4: Add SSH Key to GitHub
+
+1. GitHub Login
+2. Settings
+3. SSH and GPG Keys
+4. New SSH Key
+5. Enter Title
+6. Paste Public Key
+7. Click Add SSH Key
+
+---
+
+## Step 5: Test SSH Connection
+
+```bash
+ssh -T git@github.com
+```
+
+Expected Output:
+
+```text
+Hi username! You've successfully authenticated.
+```
+
+---
+
+## Clone Repository Using SSH
+
+```bash
+git clone git@github.com:username/repository.git
+```
+
+---
+
+## Basic Git Commands
+
+### Check Status
+
+```bash
+git status
+```
+
+### Add Files
+
+```bash
+git add .
+```
+
+### Commit Changes
+
+```bash
+git commit -m "Added SSH notes"
+```
+
+### Push Changes
+
+```bash
+git push origin main
+```
+
+---
+
+## Important Note
+
+> One SSH Key belongs to one user account.
+>
+> Another user must create and use their own SSH Key for secure access.
+
+---
+
+## SSH Workflow
+
+```text
+Generate SSH Key
+        ↓
+Copy Public Key
+        ↓
+Add Key to GitHub
+        ↓
+Test Connection
+        ↓
+Clone Repository
+        ↓
+Add → Commit → Push
+```
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ cat day4-git-notes.md
+---
+# Branching & Merge
+---
+
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ vim day4-git-notes.md
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ ls
+day1-git-notes.md  day2-git-notes  day3-git-notes.md  day4-git-notes.md
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ cat day4-git-notes.md
+========================================
+# Day 4 - Git Branch & Merge Test
+========================================
+
+## 1. Install Git
+--------------
+### Ubuntu:
+
+```bash
+sudo apt update -y
+sudo apt install git-all -y
+```
+
+### Amazon Linux:
+```bash
+sudo yum install git -y
+```
+
+### Check Version:
+git --version
+
+
+# 2. Branch and Merge Setup
+-------------------------
+```bash
+apt update -y
+apt install git-all -y
+mkdir cloud
+cd cloud
+git init
+```
+
+## Create SSH Key:
+### ssh-keygen (All steps on back page)
+
+### Git Clone:
+ * git clone (sshlink)
+
+cd directory
+
+### User Config:
+```bash
+git config --global user.name "sachin"
+git config --global user.email "email@example.com"
+```
+
+### Check User Config:
+
+* git config --list
+
+## Remote Repo Link to Local Repo Check:
+```bash
+git remote
+git remote -v
+```
+
+# 3. Branch Commands
+------------------
+### Show branch all:
+```bash
+git branch
+```
+---
+###Create branch:
+```bash
+git branch dev
+```
+---
+
+## Switch branch:
+``` bash
+git checkout dev (dev is branch name)
+switch dev
+```
+---
+
+## Switch & Create branch:
+* git checkout -b branchname
+### * test
+
+*  git branch
+---
+
+## Branch delete:
+
+* git branch -d name
+* git branch  (check branch)
+---
+
+## Create file & add data:
+```bash
+echo "hello mark" > mark.txt
+git add mark.txt
+git commit -m "mark add"
+```
+---
+
+# 4. Main Merge & Remote Push
+---------------------------
+### Go to main branch & merge:
+```bash
+ git checkout main
+ git branch
+```
+---
+
+### Merge:
+* git merge dev (branch-name)
+
+### Push file in main Remote Repository:
+```bash
+git push
+```
+---
+## Merge -> two branches into one
+## Git merge is used to combine change form one branch into another branch
+---
+
+### 2nd Way Test:
+```bash
+git branch
+git checkout -b kali
+add file
+git add .
+git commit -m "Hi"
+```
+* git checkout dev    / You not merge / direct Push
+* git merge kali
+* git push origin kali
+### kali branch all file save in dev branch
+---
+# Sachin Rathod Notes
+---
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ ;s
+bash: syntax error near unexpected token `;'
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ ls
+day1-git-notes.md  day2-git-notes  day3-git-notes.md  day4-git-notes.md
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ git branch
+* main
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ ls
+day1-git-notes.md  day2-git-notes  day3-git-notes.md  day4-git-notes.md
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   day4-git-notes.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ git add day4-git-notes.md
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ git commit -m "git day 4 notes added successfuly"
+[main 91c21d2] git day 4 notes added successfuly
+ 1 file changed, 130 insertions(+), 1 deletion(-)
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.07 KiB | 1.07 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:sachin-rathod-tech/git-practice.git
+   bfe6699..91c21d2  main -> main
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ ls
+day1-git-notes.md  day2-git-notes  day3-git-notes.md  day4-git-notes.md
+sachin@ip-172-31-33-69:~/new/git-practice/git-notes$ client_loop: send disconnect: Connection reset
+PS C:\Users\Admin\Documents\aws-key> ssh -i .\sachin-key.pem ubuntu@3.37.87.155
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-1006-aws x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Jun 15 09:20:03 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   35.3% of 6.61GB   Processes:             132
+  Memory usage: 32%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.33.69
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+12 updates can be applied immediately.
+12 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Jun 15 08:43:47 2026 from 106.78.36.1
+ubuntu@ip-172-31-33-69:~$ su - sachin
+Password:
+$ bash
+sachin@ip-172-31-33-69:~$ history
+    1  ls
+    2  mkdir tara
+    3  ls
+    4  cd tara/
+    5  ls
+    6  git init
+    7  ls -a
+    8  ls
+    9  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   10  ls
+   11  cd git-practice/
+   12  ls
+   13  git checkout -b test
+   14  git branch
+   15  ls
+   16  vim index.html
+   17  ls
+   18  cta index.html
+   19  cat index.html
+   20  ls
+   21  git status
+   22  git add index.html
+   23  git commit -m "ragnar lothbrok"
+   24  git status
+   25  git push origin test
+   26  ls
+   27  cd
+   28  ls
+   29  mkdir test
+   30  ls
+   31  cd test/
+   32  ls
+   33  git init
+   34  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   35  ls
+   36  cd git-practice/
+   37  ls
+   38  git branch
+   39  ls
+   40  cd ..
+   41  ls
+   42  rm -r git-practice/
+   43  sudo rm -r git-practice/
+   44  ls
+   45  git clone https://github.com/sachin-rathod-tech/git-practice.git
+   46  ls
+   47  cd git-practice/
+   48  ls
+   49  git branch
+   50  cd ..
+   51  ls
+   52  sudo rm -r git-practice/
+   53  ls
+   54  git clone -b test git@github.com:sachin-rathod-tech/git-practice.git
+   55  ls
+   56  cd git-practice/
+   57  ls
+   58  git branch
+   59  ls
+   60  history
+sachin@ip-172-31-33-69:~$ ls
+alia  new  tara  test
+sachin@ip-172-31-33-69:~$ ll
+total 64
+drwxr-x--- 8 sachin sachin 4096 Jun 15 09:04 ./
+drwxr-xr-x 4 root   root   4096 Jun 15 07:15 ../
+-rw------- 1 sachin sachin  756 Jun 15 08:29 .bash_history
+-rw-r--r-- 1 sachin sachin  220 Feb 13 12:16 .bash_logout
+-rw-r--r-- 1 sachin sachin 3771 Feb 13 12:16 .bashrc
+-rw-rw-r-- 1 sachin sachin   56 Jun 15 07:19 .gitconfig
+-rw------- 1 sachin sachin   20 Jun 15 09:04 .lesshst
+drwxrwxr-x 3 sachin sachin 4096 Jun 15 07:30 .local/
+-rw-r--r-- 1 sachin sachin  807 Feb 13 12:16 .profile
+drwx------ 2 sachin sachin 4096 Jun 15 07:21 .ssh/
+-rw------- 1 sachin sachin 6259 Jun 15 09:03 .viminfo
+drwxrwxr-x 4 sachin sachin 4096 Jun 15 07:21 alia/
+drwxrwxr-x 4 sachin sachin 4096 Jun 15 08:46 new/
+drwxrwxr-x 4 sachin sachin 4096 Jun 15 08:11 tara/
+drwxrwxr-x 4 sachin sachin 4096 Jun 15 08:21 test/
+sachin@ip-172-31-33-69:~$ cd new/
+sachin@ip-172-31-33-69:~/new$ ls
+git-practice
+sachin@ip-172-31-33-69:~/new$ cd git-practice/
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+* main
+sachin@ip-172-31-33-69:~/new/git-practice$ git checkout -b kali
+Switched to a new branch 'kali'
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+* kali
+  main
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch kali
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ vim index.html
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ diff
+diff: missing operand after ‘diff’
+diff: Try 'diff --help' for more information.
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff
+diff --git a/index.html b/index.html
+index e29fef7..53d4bac 100644
+--- a/index.html
++++ b/index.html
+@@ -1,10 +1,9 @@
+ # Ragnar Lothbrok
+ hello everyone my name is Sachin
+-i am from Beed, Maharastra !
+
+ ---------------------------------
++           RATHOD
+ ---------------------------------
+
+-i am learning devops tool
+-like : linux, aws, git, deocker
+-            ----
++:  linux, aws, git, deocker
++          ----
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff index.html
+diff --git a/index.html b/index.html
+index e29fef7..53d4bac 100644
+--- a/index.html
++++ b/index.html
+@@ -1,10 +1,9 @@
+ # Ragnar Lothbrok
+ hello everyone my name is Sachin
+-i am from Beed, Maharastra !
+
+ ---------------------------------
++           RATHOD
+ ---------------------------------
+
+-i am learning devops tool
+-like : linux, aws, git, deocker
+-            ----
++:  linux, aws, git, deocker
++          ----
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff README.md
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch kali
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+* kali
+  main
+sachin@ip-172-31-33-69:~/new/git-practice$ git add .
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff
+sachin@ip-172-31-33-69:~/new/git-practice$ git statss
+git: 'statss' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+sachin@ip-172-31-33-69:~/new/git-practice$ git statas
+git: 'statas' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch kali
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+sachin@ip-172-31-33-69:~/new/git-practice$ git restore --staged index.html
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch kali
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff
+diff --git a/index.html b/index.html
+index e29fef7..53d4bac 100644
+--- a/index.html
++++ b/index.html
+@@ -1,10 +1,9 @@
+ # Ragnar Lothbrok
+ hello everyone my name is Sachin
+-i am from Beed, Maharastra !
+
+ ---------------------------------
++           RATHOD
+ ---------------------------------
+
+-i am learning devops tool
+-like : linux, aws, git, deocker
+-            ----
++:  linux, aws, git, deocker
++          ----
+sachin@ip-172-31-33-69:~/new/git-practice$ git switch main
+M       index.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+  kali
+* main
+sachin@ip-172-31-33-69:~/new/git-practice$ git fiff
+git: 'fiff' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff
+diff --git a/index.html b/index.html
+index e29fef7..53d4bac 100644
+--- a/index.html
++++ b/index.html
+@@ -1,10 +1,9 @@
+ # Ragnar Lothbrok
+ hello everyone my name is Sachin
+-i am from Beed, Maharastra !
+
+ ---------------------------------
++           RATHOD
+ ---------------------------------
+
+-i am learning devops tool
+-like : linux, aws, git, deocker
+-            ----
++:  linux, aws, git, deocker
++          ----
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff kali/index.html
+fatal: ambiguous argument 'kali/index.html': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+sachin@ip-172-31-33-69:~/new/git-practice$ diff
+diff: missing operand after ‘diff’
+diff: Try 'diff --help' for more information.
+sachin@ip-172-31-33-69:~/new/git-practice$ gir diff kali
+Command 'gir' not found, but can be installed with:
+sudo apt install gir-rust-code-generator
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff kali
+diff --git a/index.html b/index.html
+index e29fef7..53d4bac 100644
+--- a/index.html
++++ b/index.html
+@@ -1,10 +1,9 @@
+ # Ragnar Lothbrok
+ hello everyone my name is Sachin
+-i am from Beed, Maharastra !
+
+ ---------------------------------
++           RATHOD
+ ---------------------------------
+
+-i am learning devops tool
+-like : linux, aws, git, deocker
+-            ----
++:  linux, aws, git, deocker
++          ----
+sachin@ip-172-31-33-69:~/new/git-practice$ git switch kali
+M       index.html
+Switched to branch 'kali'
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+* kali
+  main
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git add *
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch kali
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+sachin@ip-172-31-33-69:~/new/git-practice$ git commit -m "*_*"
+[kali 5ae26be] *_*
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch kali
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/new/git-practice$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ cat index.html
+# Ragnar Lothbrok
+hello everyone my name is Sachin
+i am from Beed, Maharastra !
+
+---------------------------------
+---------------------------------
+
+i am learning devops tool
+like : linux, aws, git, deocker
+            ----
+sachin@ip-172-31-33-69:~/new/git-practice$ git merge kali
+Updating 91c21d2..5ae26be
+Fast-forward
+ index.html | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ cat index.html
+# Ragnar Lothbrok
+hello everyone my name is Sachin
+
+---------------------------------
+           RATHOD
+---------------------------------
+
+:  linux, aws, git, deocker
+          ----
+sachin@ip-172-31-33-69:~/new/git-practice$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:sachin-rathod-tech/git-practice.git
+   91c21d2..5ae26be  main -> main
+sachin@ip-172-31-33-69:~/new/git-practice$ client_loop: send disconnect: Connection reset
+PS C:\Users\Admin\Documents\aws-key> ssh -i .\sachin-key.pem ubuntu@3.37.87.155
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-1006-aws x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Jun 15 09:45:41 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   35.3% of 6.61GB   Processes:             136
+  Memory usage: 33%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.33.69
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+12 updates can be applied immediately.
+12 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Jun 15 09:20:04 2026 from 106.78.36.1
+ubuntu@ip-172-31-33-69:~$ su - sachin
+Password:
+$ bash
+sachin@ip-172-31-33-69:~$ ls
+alia  new  tara  test
+sachin@ip-172-31-33-69:~$ cd new/
+sachin@ip-172-31-33-69:~/new$ ls
+git-practice
+sachin@ip-172-31-33-69:~/new$ cd git-practice/
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ \
+> ^C
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ ll
+total 36
+drwxrwxr-x 7 sachin sachin 4096 Jun 15 09:35 ./
+drwxrwxr-x 4 sachin sachin 4096 Jun 15 08:46 ../
+drwxrwxr-x 7 sachin sachin 4096 Jun 15 09:35 .git/
+-rw-rw-r-- 1 sachin sachin  856 Jun 15 08:46 README.md
+drwxrwxr-x 2 sachin sachin 4096 Jun 15 08:46 aws-notes/
+drwxrwxr-x 2 sachin sachin 4096 Jun 15 09:03 git-notes/
+-rw-rw-r-- 1 sachin sachin  183 Jun 15 09:35 index.html
+drwxrwxr-x 2 sachin sachin 4096 Jun 15 08:46 notes/
+drwxrwxr-x 2 sachin sachin 4096 Jun 15 08:46 practice/
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git duff
+git: 'duff' is not a git command. See 'git --help'.
+
+The most similar command is
+        diff
+sachin@ip-172-31-33-69:~/new/git-practice$ git diff
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+  kali
+* main
+sachin@ip-172-31-33-69:~/new/git-practice$ git switch kali
+Switched to branch 'kali'
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+* kali
+  main
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git log --oneline
+5ae26be (HEAD -> kali, origin/main, origin/HEAD, main) *_*
+91c21d2 git day 4 notes added successfuly
+bfe6699 modified file
+a14f3c5 Update index.html
+39d2973 added new file
+3b38b4c Update practice.md
+2326169 Delete branch-file.md
+ed90f9b Delete day1-git-notes.md
+8d7b84a Delete day2-git-notes
+796f311 Delete day3-git-notes.md
+7dac5c9 Delete day4-git-notes.md
+ea68d37 Delete practice.md
+5c351c9 Delete yash
+3e2da3c new update
+13dfba8 Delete file_00000000a90471fab640c29a5a68b064.png
+3d672d0 Add files via upload
+fed02dd Create aws-day1.md
+5e94a95 Merge pull request #2 from yashkulthe27/devops
+3c9a000 hello
+fd49e00 Hello
+aabe408 Update practice.md
+c88cfa6 Update practice.md
+9e9a00a Merge branch 'prod'
+09f7d49 markdown notes edit practice
+668c28b day4 git notes added
+e196e23 Merge pull request #1 from sachin-rathod-tech/demo
+a1fcb51 Delete galaxy
+1ca1adc Delete ssh-key
+7788c26 Delete branch-file.txt
+0efda5c Update branch-file.md
+00ce897 modify branch file
+b67e7e6 create new branch
+sachin@ip-172-31-33-69:~/new/git-practice$ git show 5ae26be
+commit 5ae26be4eb72d3fe12a33753867f4d0b9cc577a9 (HEAD -> kali, origin/main, origin/HEAD, main)
+Author: joker <sachin-rathod@outlook.com>
+Date:   Mon Jun 15 09:34:10 2026 +0000
+
+    *_*
+
+diff --git a/index.html b/index.html
+index e29fef7..53d4bac 100644
+--- a/index.html
++++ b/index.html
+@@ -1,10 +1,9 @@
+ # Ragnar Lothbrok
+ hello everyone my name is Sachin
+-i am from Beed, Maharastra !
+
+ ---------------------------------
++           RATHOD
+ ---------------------------------
+
+-i am learning devops tool
+-like : linux, aws, git, deocker
+-            ----
++:  linux, aws, git, deocker
++          ----
+sachin@ip-172-31-33-69:~/new/git-practice$ git show 2326169
+commit 2326169fd1eab5aec70701aad3c9d251079677b0
+Author: Sachin Rathod <sachin-rathod@outlook.com>
+Date:   Sun Jun 14 22:22:10 2026 +0530
+
+    Delete branch-file.md
+
+diff --git a/branch-file.md b/branch-file.md
+deleted file mode 100644
+index 3aae3ef..0000000
+--- a/branch-file.md
++++ /dev/null
+@@ -1,69 +0,0 @@
+------------------------------------------------------------------------------------------
+-# * branch & merge
+------------------------------------------------------------------------------------------
+-
+----
+-## branch check
+-
+-```bash
+-git branch
+-```
+----
+-## * Branch Practical
+-
+-## Create Branch
+-
+-```bash
+-git branch branch-name
+-```
+-
+-```bash
+-* git remote
+-* git remote -v
+-```
+-
+-## Switch Branch
+-
+-```bash
+-git checkout branch-name
+-```
+-
+-## Create File
+-
+-```bash
+-touch branch-file.txt
+-```
+-
+-## Add and Commit
+-
+-```bash
+-git add .
+-git commit -m "Branch practical"
+-```
+-
+-## Push Branch
+-
+-```bash
+-git push origin branch-name
+-```
+-
+-## Merge Branch
+-
+-```bash
+-git checkout main
+-git merge branch-name
+-```
+-
+-## Delete Branch
+-
+-```bash
+-git branch -d branch-name
+-git push origin --delete branch-name
+-```
+-
+-## Verify Branches
+-
+-```bash
+-git branch
+-git branch -a
+-```
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git show c88cfa6
+commit c88cfa63b1ded1afb46dd9e10c1675519b39b2c3
+Author: Sachin Rathod <sachin-rathod@outlook.com>
+Date:   Sat Jun 13 14:20:00 2026 +0530
+
+    Update practice.md
+
+diff --git a/practice.md b/practice.md
+index 59e1e33..0947945 100644
+--- a/practice.md
++++ b/practice.md
+@@ -5,11 +5,11 @@
+ ---
+
+ ---bash
+-## sachin rathod
++ sachin-rathod
+ ---
+
+ # * asdfghjkl
+-# * asdfghjkl
++ * asdfghjkl
+ # * asdfghjkl
+
+ * qwlkjhgfdsazxcvbnm
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$ git checkot -b dev
+git: 'checkot' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+sachin@ip-172-31-33-69:~/new/git-practice$ git checkout -b dev
+Switched to a new branch 'dev'
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+* dev
+  kali
+  main
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ cat > f1
+hello f1
+^C
+sachin@ip-172-31-33-69:~/new/git-practice$ cat > f2
+f2
+^C
+sachin@ip-172-31-33-69:~/new/git-practice$ cat > f3
+f3
+^C
+sachin@ip-172-31-33-69:~/new/git-practice$ cat > f4
+f4
+^C
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+* dev
+  kali
+  main
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        f1
+        f2
+        f3
+        f4
+
+nothing added to commit but untracked files present (use "git add" to track)
+sachin@ip-172-31-33-69:~/new/git-practice$ git add f3
+sachin@ip-172-31-33-69:~/new/git-practice$ git commit -m "f3 add"
+[dev 9d1e3f3] f3 add
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f3
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git log
+commit 9d1e3f31d77f9e40334349eddbfbf6ec4cbf6218 (HEAD -> dev)
+Author: joker <sachin-rathod@outlook.com>
+Date:   Mon Jun 15 09:55:36 2026 +0000
+
+    f3 add
+
+commit 5ae26be4eb72d3fe12a33753867f4d0b9cc577a9 (origin/main, origin/HEAD, main, kali)
+Author: joker <sachin-rathod@outlook.com>
+Date:   Mon Jun 15 09:34:10 2026 +0000
+
+    *_*
+
+commit 91c21d2ede285e30d62f3a275ddf138446b7f034
+Author: joker <sachin-rathod@outlook.com>
+Date:   Mon Jun 15 09:05:45 2026 +0000
+
+    git day 4 notes added successfuly
+
+commit bfe669928bb0deba10c63a8c23bd167aa1596760
+Author: joker <sachin-rathod@outlook.com>
+Date:   Mon Jun 15 07:53:29 2026 +0000
+
+    modified file
+
+commit a14f3c5cf0b13ab429ba2ec4d2b77db02b48e318
+Author: Sachin Rathod <sachin-rathod@outlook.com>
+Date:   Mon Jun 15 13:21:32 2026 +0530
+
+    Update index.html
+
+commit 39d2973effc3449aad50d31f1008ac9d4eeea489
+Author: joker <sachin-rathod@outlook.com>
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git log --oneline
+9d1e3f3 (HEAD -> dev) f3 add
+5ae26be (origin/main, origin/HEAD, main, kali) *_*
+91c21d2 git day 4 notes added successfuly
+bfe6699 modified file
+a14f3c5 Update index.html
+39d2973 added new file
+3b38b4c Update practice.md
+2326169 Delete branch-file.md
+ed90f9b Delete day1-git-notes.md
+8d7b84a Delete day2-git-notes
+796f311 Delete day3-git-notes.md
+7dac5c9 Delete day4-git-notes.md
+ea68d37 Delete practice.md
+5c351c9 Delete yash
+3e2da3c new update
+13dfba8 Delete file_00000000a90471fab640c29a5a68b064.png
+3d672d0 Add files via upload
+fed02dd Create aws-day1.md
+5e94a95 Merge pull request #2 from yashkulthe27/devops
+3c9a000 hello
+fd49e00 Hello
+aabe408 Update practice.md
+c88cfa6 Update practice.md
+9e9a00a Merge branch 'prod'
+09f7d49 markdown notes edit practice
+668c28b day4 git notes added
+e196e23 Merge pull request #1 from sachin-rathod-tech/demo
+a1fcb51 Delete galaxy
+1ca1adc Delete ssh-key
+7788c26 Delete branch-file.txt
+0efda5c Update branch-file.md
+00ce897 modify branch file
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git switch dev
+Switched to branch 'dev'
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git add f1
+sachin@ip-172-31-33-69:~/new/git-practice$ git commit -m "f1 add"
+[dev fc12d30] f1 add
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1
+sachin@ip-172-31-33-69:~/new/git-practice$ git log --oneline
+fc12d30 (HEAD -> dev) f1 add
+9d1e3f3 f3 add
+5ae26be (origin/main, origin/HEAD, main, kali) *_*
+91c21d2 git day 4 notes added successfuly
+bfe6699 modified file
+a14f3c5 Update index.html
+39d2973 added new file
+3b38b4c Update practice.md
+2326169 Delete branch-file.md
+ed90f9b Delete day1-git-notes.md
+8d7b84a Delete day2-git-notes
+796f311 Delete day3-git-notes.md
+7dac5c9 Delete day4-git-notes.md
+ea68d37 Delete practice.md
+5c351c9 Delete yash
+3e2da3c new update
+13dfba8 Delete file_00000000a90471fab640c29a5a68b064.png
+3d672d0 Add files via upload
+fed02dd Create aws-day1.md
+5e94a95 Merge pull request #2 from yashkulthe27/devops
+3c9a000 hello
+fd49e00 Hello
+aabe408 Update practice.md
+c88cfa6 Update practice.md
+9e9a00a Merge branch 'prod'
+09f7d49 markdown notes edit practice
+668c28b day4 git notes added
+e196e23 Merge pull request #1 from sachin-rathod-tech/demo
+a1fcb51 Delete galaxy
+1ca1adc Delete ssh-key
+7788c26 Delete branch-file.txt
+0efda5c Update branch-file.md
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git add f2
+sachin@ip-172-31-33-69:~/new/git-practice$ git commit -m "f2 add"
+[dev 2fb4fe0] f2 add
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f2
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git add f4
+sachin@ip-172-31-33-69:~/new/git-practice$ git commit -m "f4 add"
+[dev e3782c3] f4 add
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f4
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f1  f2  f3  f4  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git status
+On branch dev
+nothing to commit, working tree clean
+sachin@ip-172-31-33-69:~/new/git-practice$ git log --oneline
+e3782c3 (HEAD -> dev) f4 add
+2fb4fe0 f2 add
+fc12d30 f1 add
+9d1e3f3 f3 add
+5ae26be (origin/main, origin/HEAD, main, kali) *_*
+91c21d2 git day 4 notes added successfuly
+bfe6699 modified file
+a14f3c5 Update index.html
+39d2973 added new file
+3b38b4c Update practice.md
+2326169 Delete branch-file.md
+ed90f9b Delete day1-git-notes.md
+8d7b84a Delete day2-git-notes
+796f311 Delete day3-git-notes.md
+7dac5c9 Delete day4-git-notes.md
+ea68d37 Delete practice.md
+5c351c9 Delete yash
+3e2da3c new update
+13dfba8 Delete file_00000000a90471fab640c29a5a68b064.png
+3d672d0 Add files via upload
+fed02dd Create aws-day1.md
+5e94a95 Merge pull request #2 from yashkulthe27/devops
+3c9a000 hello
+fd49e00 Hello
+aabe408 Update practice.md
+c88cfa6 Update practice.md
+9e9a00a Merge branch 'prod'
+09f7d49 markdown notes edit practice
+668c28b day4 git notes added
+e196e23 Merge pull request #1 from sachin-rathod-tech/demo
+a1fcb51 Delete galaxy
+1ca1adc Delete ssh-key
+sachin@ip-172-31-33-69:~/new/git-practice$ git show fc12d30
+commit fc12d30e6ec60fae2c38ec1816aa2b809d39f633
+Author: joker <sachin-rathod@outlook.com>
+Date:   Mon Jun 15 09:58:19 2026 +0000
+
+    f1 add
+
+diff --git a/f1 b/f1
+new file mode 100644
+index 0000000..30897c3
+--- /dev/null
++++ b/f1
+@@ -0,0 +1 @@
++hello f1
+sachin@ip-172-31-33-69:~/new/git-practice$
+sachin@ip-172-31-33-69:~/new/git-practice$ git main
+git: 'main' is not a git command. See 'git --help'.
+
+The most similar command is
+        mailinfo
+sachin@ip-172-31-33-69:~/new/git-practice$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+sachin@ip-172-31-33-69:~/new/git-practice$ git branch
+  dev
+  kali
+* main
+sachin@ip-172-31-33-69:~/new/git-practice$ 'ls
+> ^C
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git cherry-pich 9d1e3f3
+git: 'cherry-pich' is not a git command. See 'git --help'.
+
+The most similar command is
+        cherry-pick
+sachin@ip-172-31-33-69:~/new/git-practice$ git cherry-pick 9d1e3f3
+[main 6fd28ed] f3 add
+ Date: Mon Jun 15 09:55:36 2026 +0000
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f3
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f3  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ git cherry-pick 2fb4fe0
+[main 37947a1] f2 add
+ Date: Mon Jun 15 09:59:35 2026 +0000
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f2
+sachin@ip-172-31-33-69:~/new/git-practice$ ls
+README.md  aws-notes  f2  f3  git-notes  index.html  notes  practice
+sachin@ip-172-31-33-69:~/new/git-practice$ cat f3
+f3
+sachin@ip-172-31-33-69:~/new/git-practice$ cat f2
+f2
+sachin@ip-172-31-33-69:~/new/git-practice$ client_loop: send disconnect: Connection reset
+PS C:\Users\Admin\Documents\aws-key> ssh -i .\sachin-key.pem ubuntu@3.37.87.155
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-1006-aws x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Jun 15 10:24:40 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   35.3% of 6.61GB   Processes:             138
+  Memory usage: 33%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.33.69
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+12 updates can be applied immediately.
+12 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Mon Jun 15 09:45:41 2026 from 106.78.36.1
+ubuntu@ip-172-31-33-69:~$ su - sachin
+Password:
+$ bash
+sachin@ip-172-31-33-69:~$ history
+    1  ls
+    2  mkdir tara
+    3  ls
+    4  cd tara/
+    5  ls
+    6  git init
+    7  ls -a
+    8  ls
+    9  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   10  ls
+   11  cd git-practice/
+   12  ls
+   13  git checkout -b test
+   14  git branch
+   15  ls
+   16  vim index.html
+   17  ls
+   18  cta index.html
+   19  cat index.html
+   20  ls
+   21  git status
+   22  git add index.html
+   23  git commit -m "ragnar lothbrok"
+   24  git status
+   25  git push origin test
+   26  ls
+   27  cd
+   28  ls
+   29  mkdir test
+   30  ls
+   31  cd test/
+   32  ls
+   33  git init
+   34  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   35  ls
+   36  cd git-practice/
+   37  ls
+   38  git branch
+   39  ls
+   40  cd ..
+   41  ls
+   42  rm -r git-practice/
+   43  sudo rm -r git-practice/
+   44  ls
+   45  git clone https://github.com/sachin-rathod-tech/git-practice.git
+   46  ls
+   47  cd git-practice/
+   48  ls
+   49  git branch
+   50  cd ..
+   51  ls
+   52  sudo rm -r git-practice/
+   53  ls
+   54  git clone -b test git@github.com:sachin-rathod-tech/git-practice.git
+   55  ls
+   56  cd git-practice/
+   57  ls
+   58  git branch
+   59  ls
+   60  ls
+   61  git --version
+   62  clear
+   63  ls
+   64  ssh-keygen
+   65  cat .ssh/id_ed25519.pub
+   66  ls
+   67  mkdir alia
+   68  ls
+   69  cd alia/
+   70  ls
+   71  git init
+   72  ls -a
+   73  ls
+   74  git config --global user.name "joker"
+   75  git config --global user.email "sachin-rathod@outlook.com"
+   76  git config --list
+   77  ls
+   78  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   79  ls
+   80  cd git-practice/
+   81  ls
+   82  git branch
+   83  git checkout -b prod
+   84  git branch
+   85  git status
+   86  ls
+   87  cd practice/
+   88  ls
+   89  cat practice.md
+   90  s
+   91  ls
+   92  cd ..
+   93  ls
+   94  touch index.html
+   95  ls
+   96  nano index.html
+   97  ls
+   98  cat index.html
+   99  cat >> index.html
+  100  ls
+  101  cat index.html
+  102  ls
+  103  git status
+  104  git add index.html
+  105  git status
+  106  git commit -m "added new file"
+  107  git status
+  108  ls
+  109  git switch main
+  110  git status
+  111  git branch
+  112  ls
+  113  git merge prod
+  114  ls
+  115  cat index.html
+  116  cat practice/practice.md
+  117  s
+  118  ls
+  119  git push
+  120  git fetch origin main
+  121  ls
+  122  cd practice/
+  123  ls
+  124  cat practice.md
+  125  ls
+  126  cd ..
+  127  ls
+  128  git pull
+  129  git rebase
+  130  ls
+  131  cat practice/practice.md
+  132  ls
+  133  git status
+  134  git push
+  135  ls
+  136  git branch
+  137  git ckeckout practice/
+  138  git ckeckout prod
+  139  git branch
+  140  git checkout prod
+  141  git branch
+  142  ls
+  143  cat practice/practice.md
+  144  ls
+  145  git pull
+  146  git remote -v
+  147  git remote
+  148  l
+  149  ls
+  150  git branch
+  151  git switch main
+  152  ls
+  153  git branch
+  154  ls
+  155  vim index.html
+  156  ls
+  157  git status
+  158  ls
+  159  cat index.html
+  160  vim index.html
+  161  ls
+  162  git status
+  163  git add *
+  164  git status
+  165  git commit -m "modified file"
+  166  ls
+  167  git status
+  168  git push
+  169  git pull
+  170  git rebase
+  171  ls
+  172  cat index.html
+  173  git push
+  174  ls
+  175  history
+sachin@ip-172-31-33-69:~$ history > data.txt
+sachin@ip-172-31-33-69:~$ ls
+alia  data.txt  new  tara  test
+sachin@ip-172-31-33-69:~$ cat data.txt
+    1  ls
+    2  mkdir tara
+    3  ls
+    4  cd tara/
+    5  ls
+    6  git init
+    7  ls -a
+    8  ls
+    9  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   10  ls
+   11  cd git-practice/
+   12  ls
+   13  git checkout -b test
+   14  git branch
+   15  ls
+   16  vim index.html
+   17  ls
+   18  cta index.html
+   19  cat index.html
+   20  ls
+   21  git status
+   22  git add index.html
+   23  git commit -m "ragnar lothbrok"
+   24  git status
+   25  git push origin test
+   26  ls
+   27  cd
+   28  ls
+   29  mkdir test
+   30  ls
+   31  cd test/
+   32  ls
+   33  git init
+   34  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   35  ls
+   36  cd git-practice/
+   37  ls
+   38  git branch
+   39  ls
+   40  cd ..
+   41  ls
+   42  rm -r git-practice/
+   43  sudo rm -r git-practice/
+   44  ls
+   45  git clone https://github.com/sachin-rathod-tech/git-practice.git
+   46  ls
+   47  cd git-practice/
+   48  ls
+   49  git branch
+   50  cd ..
+   51  ls
+   52  sudo rm -r git-practice/
+   53  ls
+   54  git clone -b test git@github.com:sachin-rathod-tech/git-practice.git
+   55  ls
+   56  cd git-practice/
+   57  ls
+   58  git branch
+   59  ls
+   60  ls
+   61  git --version
+   62  clear
+   63  ls
+   64  ssh-keygen
+   65  cat .ssh/id_ed25519.pub
+   66  ls
+   67  mkdir alia
+   68  ls
+   69  cd alia/
+   70  ls
+   71  git init
+   72  ls -a
+   73  ls
+   74  git config --global user.name "joker"
+   75  git config --global user.email "sachin-rathod@outlook.com"
+   76  git config --list
+   77  ls
+   78  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   79  ls
+   80  cd git-practice/
+   81  ls
+   82  git branch
+   83  git checkout -b prod
+   84  git branch
+   85  git status
+   86  ls
+   87  cd practice/
+   88  ls
+   89  cat practice.md
+   90  s
+   91  ls
+   92  cd ..
+   93  ls
+   94  touch index.html
+   95  ls
+   96  nano index.html
+   97  ls
+   98  cat index.html
+   99  cat >> index.html
+  100  ls
+  101  cat index.html
+  102  ls
+  103  git status
+  104  git add index.html
+  105  git status
+  106  git commit -m "added new file"
+  107  git status
+  108  ls
+  109  git switch main
+  110  git status
+  111  git branch
+  112  ls
+  113  git merge prod
+  114  ls
+  115  cat index.html
+  116  cat practice/practice.md
+  117  s
+  118  ls
+  119  git push
+  120  git fetch origin main
+  121  ls
+  122  cd practice/
+  123  ls
+  124  cat practice.md
+  125  ls
+  126  cd ..
+  127  ls
+  128  git pull
+  129  git rebase
+  130  ls
+  131  cat practice/practice.md
+  132  ls
+  133  git status
+  134  git push
+  135  ls
+  136  git branch
+  137  git ckeckout practice/
+  138  git ckeckout prod
+  139  git branch
+  140  git checkout prod
+  141  git branch
+  142  ls
+  143  cat practice/practice.md
+  144  ls
+  145  git pull
+  146  git remote -v
+  147  git remote
+  148  l
+  149  ls
+  150  git branch
+  151  git switch main
+  152  ls
+  153  git branch
+  154  ls
+  155  vim index.html
+  156  ls
+  157  git status
+  158  ls
+  159  cat index.html
+  160  vim index.html
+  161  ls
+  162  git status
+  163  git add *
+  164  git status
+  165  git commit -m "modified file"
+  166  ls
+  167  git status
+  168  git push
+  169  git pull
+  170  git rebase
+  171  ls
+  172  cat index.html
+  173  git push
+  174  ls
+  175  history
+  176  history > data.txt
+sachin@ip-172-31-33-69:~$ ls
+alia  data.txt  new  tara  test
+sachin@ip-172-31-33-69:~$

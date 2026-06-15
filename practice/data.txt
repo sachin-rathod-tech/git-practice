@@ -1,0 +1,176 @@
+    1  ls
+    2  mkdir tara
+    3  ls
+    4  cd tara/
+    5  ls
+    6  git init
+    7  ls -a
+    8  ls
+    9  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   10  ls
+   11  cd git-practice/
+   12  ls
+   13  git checkout -b test
+   14  git branch
+   15  ls
+   16  vim index.html 
+   17  ls
+   18  cta index.html 
+   19  cat index.html 
+   20  ls
+   21  git status
+   22  git add index.html 
+   23  git commit -m "ragnar lothbrok"
+   24  git status
+   25  git push origin test
+   26  ls
+   27  cd
+   28  ls
+   29  mkdir test
+   30  ls
+   31  cd test/
+   32  ls
+   33  git init
+   34  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   35  ls
+   36  cd git-practice/
+   37  ls
+   38  git branch
+   39  ls
+   40  cd ..
+   41  ls
+   42  rm -r git-practice/
+   43  sudo rm -r git-practice/
+   44  ls
+   45  git clone https://github.com/sachin-rathod-tech/git-practice.git
+   46  ls
+   47  cd git-practice/
+   48  ls
+   49  git branch
+   50  cd ..
+   51  ls
+   52  sudo rm -r git-practice/
+   53  ls
+   54  git clone -b test git@github.com:sachin-rathod-tech/git-practice.git
+   55  ls
+   56  cd git-practice/
+   57  ls
+   58  git branch
+   59  ls
+   60  ls
+   61  git --version
+   62  clear
+   63  ls
+   64  ssh-keygen
+   65  cat .ssh/id_ed25519.pub 
+   66  ls
+   67  mkdir alia
+   68  ls
+   69  cd alia/
+   70  ls
+   71  git init
+   72  ls -a
+   73  ls
+   74  git config --global user.name "joker"
+   75  git config --global user.email "sachin-rathod@outlook.com"
+   76  git config --list
+   77  ls
+   78  git clone git@github.com:sachin-rathod-tech/git-practice.git
+   79  ls
+   80  cd git-practice/
+   81  ls
+   82  git branch
+   83  git checkout -b prod
+   84  git branch
+   85  git status
+   86  ls
+   87  cd practice/
+   88  ls
+   89  cat practice.md 
+   90  s
+   91  ls
+   92  cd ..
+   93  ls
+   94  touch index.html
+   95  ls
+   96  nano index.html 
+   97  ls
+   98  cat index.html 
+   99  cat >> index.html 
+  100  ls
+  101  cat index.html 
+  102  ls
+  103  git status
+  104  git add index.html 
+  105  git status
+  106  git commit -m "added new file"
+  107  git status
+  108  ls
+  109  git switch main
+  110  git status
+  111  git branch
+  112  ls
+  113  git merge prod
+  114  ls
+  115  cat index.html 
+  116  cat practice/practice.md 
+  117  s
+  118  ls
+  119  git push
+  120  git fetch origin main
+  121  ls
+  122  cd practice/
+  123  ls
+  124  cat practice.md 
+  125  ls
+  126  cd ..
+  127  ls
+  128  git pull 
+  129  git rebase 
+  130  ls
+  131  cat practice/practice.md 
+  132  ls
+  133  git status
+  134  git push
+  135  ls
+  136  git branch
+  137  git ckeckout practice/
+  138  git ckeckout prod
+  139  git branch
+  140  git checkout prod
+  141  git branch
+  142  ls
+  143  cat practice/practice.md 
+  144  ls
+  145  git pull
+  146  git remote -v
+  147  git remote 
+  148  l
+  149  ls
+  150  git branch 
+  151  git switch main
+  152  ls
+  153  git branch
+  154  ls
+  155  vim index.html 
+  156  ls
+  157  git status
+  158  ls
+  159  cat index.html 
+  160  vim index.html 
+  161  ls
+  162  git status
+  163  git add *
+  164  git status
+  165  git commit -m "modified file"
+  166  ls
+  167  git status
+  168  git push
+  169  git pull
+  170  git rebase 
+  171  ls
+  172  cat index.html 
+  173  git push
+  174  ls
+  175  history 
+  176  history > data.txt
