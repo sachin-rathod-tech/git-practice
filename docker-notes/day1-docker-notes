@@ -1,0 +1,285 @@
+--------------------------------
+
+    Docker Commands Notes
+
+--------------------------------
+
+1. Check Docker Version
+
+docker --version
+
+Shows the installed Docker version.
+
+Example:
+
+Docker version 28.x.x
+
+--------------------------------
+
+2. Check Docker Service Status
+
+systemctl status docker
+
+Checks whether Docker service is running or not.
+
+-------------------------------------
+
+3. Add User to Docker Group
+
+sudo usermod -aG docker sachin
+
+Allows user "sachin" to run Docker commands without sudo.
+
+--------------------------------------------
+
+Basic Docker Commands
+
+4. Run Nginx Container
+
+docker run nginx
+
+Pulls nginx image (if not available), creates a container, and starts it.
+
+----------------------------------------------
+
+5. Run Container in Background
+
+docker run -d nginx
+
+-d = Detached Mode (runs in background).
+
+----------------------------------------------
+
+6. List Running Containers
+
+docker ps
+
+Shows only running containers.
+
+------------------------------------
+
+7. List All Containers
+
+docker ps -a
+
+Shows running and stopped containers.
+
+---------------------------------------
+
+8. Show Only Container IDs
+
+docker ps -aq
+
+Displays only container IDs.
+
+----------------------------------------
+
+9. Inspect Container Details
+
+docker inspect <container-id>
+
+Shows detailed information about a container.
+
+--------------------------------------------
+
+10. Run Container with Port Mapping
+
+docker run -p 80:80 -d nginx
+
+Maps host port 80 to container port 80.
+
+Format:
+
+docker run -p HOST_PORT:CONTAINER_PORT IMAGE
+
+-----------------------------------------
+
+11. Publish All Ports
+
+docker run -P -d nginx
+
+Docker automatically assigns available host ports.
+
+-----------------------------------------
+
+12. View Linux Processes
+
+ps -elf
+
+Displays all running processes in Linux.
+
+--------------------------------------------
+
+Docker Run Process
+
+docker run
+   ↓
+Pull Image
+   ↓
+Create Container
+   ↓
+Start Container
+
+Docker Run = Pull + Create + Start
+
+-------------------------------------------
+
+Container Management
+
+13. Stop Container
+
+docker stop <container-id>
+
+Stops a running container.
+
+------------------------------------------
+
+14. Start Container
+
+docker start <container-id>
+
+Starts a stopped container.
+
+-----------------------------------------
+
+15. Check Containers
+
+docker ps -a
+
+View all containers.
+
+------------------------------------
+
+Delete Container
+
+16. Remove Container
+
+docker rm <container-id>
+
+Deletes a stopped container.
+
+----------------------------------------
+
+17. Force Remove Container
+
+docker rm -f <container-id>
+
+Stops and deletes container immediately.
+
+-------------------------------------------
+
+Access Container
+
+18. Login to Container
+
+docker exec -it <container-id> bash
+
+Opens terminal inside container.
+
+Options:
+
+- i = Interactive
+- t = Terminal
+
+Exit:
+
+exit
+
+--------------------------------------------
+
+Copy Files
+
+19. Copy File to Container
+
+docker cp file.txt <container-id>:/tmp
+
+Copies file from host to container.
+
+-------------------------------------------
+
+Logs
+
+20. View Container Logs
+
+docker logs <container-id>
+
+Shows container logs.
+
+--------------------------------------
+
+21. Follow Logs Live
+
+docker logs -f <container-id>
+
+Displays logs in real time.
+
+-------------------------------------
+
+Resource Usage
+
+22. Container Statistics
+
+docker container stats
+
+Shows CPU, Memory, and Network usage.
+
+Single container:
+
+docker container stats <container-id>
+
+----------------------------------------
+
+Docker Images
+
+23. List Images
+
+docker images
+
+Shows downloaded images.
+
+----------------------------------------
+
+24. Delete Image
+
+docker rmi <image-id>
+
+Removes an image.
+
+Note:
+Delete containers first, then delete images.
+
+-----------------------------------------
+
+Download Images
+
+25. Pull Apache Image
+
+docker pull httpd
+
+Downloads Apache image.
+
+------------------------------------------
+
+26. Pull Any Image
+
+docker pull <image-name>
+
+Example:
+
+docker pull nginx
+docker pull ubuntu
+docker pull redis
+
+-----------------------------------------
+
+Search Images
+
+27. Search Docker Hub Images
+
+docker search nginx
+
+or
+
+docker search netflix
+
+Searches images available on Docker Hub.
