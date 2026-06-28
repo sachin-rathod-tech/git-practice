@@ -63,9 +63,15 @@
 </p>
 
 ---
-[## 🐍 Contribution Snake
+## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sachin-rathod-tech/sachin-rathod-tech/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight" height="180em"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight" height="180em"/>
 </p>
-](https://github.com/Ishikapbhatt/Ishikapbhatt)
+
+## 🔥 GitHub Streak
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&theme=tokyonight" />
+</p>
