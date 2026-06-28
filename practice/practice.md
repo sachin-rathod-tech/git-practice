@@ -61,3 +61,10 @@
 <p align="center">
 <img src="https://skillicons.dev/icons?i=linux,git,github,docker,kubernetes,terraform,jenkins,ansible,aws,vscode,bash&perline=6" />
 </p>
+
+---
+## 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/sachin-rathod-tech/sachin-rathod-tech/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</p>
