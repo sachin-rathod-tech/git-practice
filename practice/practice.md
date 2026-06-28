@@ -18,6 +18,45 @@
 ---
 
 ## 🛠️ Tools & Technologies
+---
+---
+
+# 📊 GitHub Stats
+
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=sachin-rathod-tech&show_icons=true&theme=tokyonight&hide_border=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sachin-rathod-tech&layout=compact&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+# 🔥 GitHub Streak
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=sachin-rathod-tech&theme=tokyonight&hide_border=true"/>
+</p>
+
+---
+
+# 📈 Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sachin-rathod-tech&theme=tokyo-night"/>
+</p>
+
+---
+
+# 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=sachin-rathod-tech&theme=tokyonight&no-frame=true&row=1&column=6"/>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=sachin-rathod-tech&label=Profile%20Views&color=0e75b6&style=flat"/>
+</p>
 
 <p align="center">
 <img src="https://skillicons.dev/icons?i=linux,git,github,docker,kubernetes,terraform,jenkins,ansible,aws,vscode,bash&perline=6" />
