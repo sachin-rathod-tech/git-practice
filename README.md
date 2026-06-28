@@ -1,3 +1,9 @@
+# 🚀 AWS Cloud Infrastructure Tasks
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![DevOps](https://img.shields.io/badge/DevOps-blue?style=for-the-badge)
+
 --------------------------------------------------
 ## GitHub Storage & Remote Configuration
 --------------------------------------------------
